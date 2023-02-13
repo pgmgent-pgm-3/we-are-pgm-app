@@ -11,7 +11,7 @@ const student = {
   classname: "1PGM-a",
   email: "john_doe3@hotmail.com",
   age: 32,
-  avatar: "https://i.pravatar.cc/300",
+  avatar: "https://i.pravatar.cc/300", // max 255 characters!!!
   hobbies: ["Gamen", "Programmeren"],
   motto: "Code like a boss",
   about: "Ik ben een student die graag codeert.",
@@ -29,6 +29,10 @@ const getStudents = async () => {
 // uncomment the line below to fetch the students from the API
 // getStudents();
 
+/**
+ * Post myself to the API
+ * Log the response to the console
+ */
 const postStudent = async () => {
   const response = await fetch(API_URL, {
     method: "POST",
